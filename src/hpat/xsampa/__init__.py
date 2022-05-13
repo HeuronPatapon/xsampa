@@ -1,6 +1,6 @@
 __author__ = "Heuron Patapon"
 __email__ = "heuron-patapon@laposte.net"
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
 
 import doctest
