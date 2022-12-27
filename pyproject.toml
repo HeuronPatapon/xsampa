@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "xsampa-heuronpatapon"
-version = "1.1.2"
+version = "1.1.4"
 description = "Convert between XSAMPA and IPA data formats."
 authors = ["Heuron <heuron-patapon@laposte.net>"]
 license = "MIT"
