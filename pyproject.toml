@@ -1,6 +1,24 @@
+[tool.poetry]
+name = "xsampa-heuronpatapon"
+version = "1.1.2"
+description = "Convert between XSAMPA and IPA data formats."
+authors = ["Heuron <heuron-patapon@laposte.net>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "hpat/xsampa", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ezre-heuronpatapon = {url = "https://github.com/HeuronPatapon/ezre/releases/download/1.3.1/ezre_HeuronPatapon-1.3.1-py3-none-any.whl"}
+panflute = {version = "^2.2.3", optional = true}
+
+[tool.poetry.extras]
+pandoc = ["panflute"]
+
+
 [build-system]
-requires = [
-    "setuptools>=42",
-    "wheel"
-]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+panipa = { callable = "hpat.xsampa.macro:main", extras = ["pandoc"] }

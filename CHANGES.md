@@ -1,3 +1,7 @@
+# 1.1.2
+
+- Move to poetry. 
+
 # 1.1.0
 
 - Move to MIT license. 
